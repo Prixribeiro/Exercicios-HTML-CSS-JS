@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--Criar um programa para criar um titulo e um paragrafo e mais um botão para apagar as informações da classe e outro botão para fazer as informações aparecerem.-->
+<html lang="pt-br">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+                      $(document).ready(function(){
+                      $("#apagar").click(function(){
+                        $(".some, .retorna").hide();
+                });
+                    $("#visualizar").click(function(){
+                        $(".retorna").show();
+              });
+            });
+        </script>
+    </head>
+
+    <body>
+        <h1 class="retorna">Aprendendo a usar o método click no Jquery com Class e ID</h1>
+        <p class="some">Paragrafo a ser apagado definitivo</p>
+        <p class="retorna">Paragrafo a ser apagado e retornado a visualização!</p>
+        <p class="some">Paragrafo a ser apagado definitivo</p>
+        <p class="retorna">Paragrafo a ser apagado e retornado a visualização!</p>
+
+        <button id="apagar">Clique aqui para ocultar!</button>
+        <br><br>
+        <button id="visualizar"> Clique aqui para retornar infos!</button>
+    </body>
+</html>
+
+<!-- <!DOCTYPEhtml>
+<html>
+<head>
+<scriptsrc="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#btn1").click(function(){
+alert("Texto:"+$("#teste").text());
+});
+$("#btn2").click(function(){
+alert("codigoHTML:"+$("#teste").html());
+});
+});
+</script>
+</head>
+<body>
+<pid="teste">Istoesta<b>emnegrito</b>emalgumtextodoparagrafo</p>
+<buttonid="btn1">Exibirotexto</button>
+<buttonid="btn2">exibirohtml</button>
+</body>
+</html>-->

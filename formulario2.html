@@ -1,0 +1,46 @@
+<!DOCTIPE html>
+<html lang="pt-br">
+    <!--Criar um código HTML com o nome formulario2.html
+Colocar o título na página Formulario 2;
+Na tag <body> colocar um título em negrito com a fonte na cor verde com o nome Informações Gerais;
+Na tag <body> inserir uma foto que faça referência ao negócio;
+Na tag <body> colocar um dois parágrafos com informação sobre a temática que irá tratar;
+Na tag <body> colocar um outro título em negrito com a fonte na cor azul com o nome Formulário de Escolha;
+Na tag <form> colocar as entradas de dados abaixo:
+Campo nome;
+Campo idade;
+Campo sexo:
+Masculino;
+Feminino;
+Outros. 	Colocar como default.-->
+
+<head>
+    <title> Formularios 2 - Radio Button</title>
+    <meta charset="UTF-8">
+
+    <body>
+        <h1><b><font color="green">Informações Gerais</font></b></h1>
+        <img src="./CE5B8692-FBA7-4E67-A287-55DB796EE4FF.jpeg" alt="foto aula" width="120px">
+
+        <p>Aula de HTML 5</p>
+        <p>Radio Button</p>
+
+        <h2><b><font color="blue">Formulário de escolha</font></b></h2>
+
+        <form>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome"><br><br>
+            <label for="idade">Idade:</label><br>
+            <input type="number" id="idade" name="idade"><br><br>
+            <input type="radio" id="masc" name="genero" value="masc">
+            <label for="masc">Masculino</label>
+            <input type="radio" name="genero" id="fem" value="fem">
+            <label for="fem">Feminino</label>
+            <input type="radio"name="genero" id="default" value="default" checked>
+            <label for="default">Outro</label>
+
+        </form>
+  
+    </body>
+
+</html>

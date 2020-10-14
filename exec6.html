@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercicio de Desconto em Salário - IF/Else</title>
+        <!--Quinta atividade:
+Fazer um programa para que o usuário digite um salário e o programa deverá calcular seu reajuste. Exibir mensagem com o valor do desconto.
+Salario <= 600 e sexo = “M”, aplicar desconto de 20%
+Salario <= 1200 e sexo = “F”, aplicar desconto de 20%
+Salario <= 2000 e sexo “M”, aplicar desconto de 25%
+Senão, desconto de 30% - ambos os sexos
+
+Fórmula: desconto = salario * 0.2 ou 0.25 ou 0.30;-->
+
+    </head>
+    <body>
+        <script>
+            let salario= Number(prompt ("Digite seu salário atual:"));
+            let sexo= prompt ("Digite seu sexo (M/F)");
+
+            if (salario<=600 && sexo=="m"){
+                document.write ("Seu desconto será de 20%= " + salario*0.20);
+            }
+            else if (salario<=1200 && sexo=="f"){
+                document.write ("Seu desconto será de 20%= " + salario*0.20);
+            }
+            else if (salario<=2000 && sexo=="m"){
+                document.write ("Seu desconto será de 25%= " + salario*0.25);
+            }
+            else {
+                document.write ("Seu desconto será de 30%= " + salario*0.30);
+            }
+        </script>
+
+    </body>
+</html>

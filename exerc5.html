@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>if/else/ && / || </title>
+        <meta charset="UTF-8">
+<!--Quarta atividade:
+Fazer um programa para que o usuário digite três notas, o programa deverá calcular a média aritmética e exibir o status.
+Media >= 7, aprovado
+Media <3, reprovado
+Senão, prova final-->
+    </head>
+    <body>
+        <script>
+            let nota1= Number(prompt ("Digite sua primeira nota:"));
+            let nota2 = Number(prompt ("Digite sua segunda nota:"));
+            let nota3= Number(prompt ("Digite sua terceira nota:"));
+            let media = (nota1+nota2+nota3)/3;
+
+            if (media>=7){
+                document.write ("Aluno aprovado! " + media);
+            }
+            else if (media>3 && media<7) {
+                document.write ("Aluno deve refazer a prova final! " + media);
+            }
+            else {
+                document.write ("Aluno reprovado! " + media)
+            }
+
+
+        </script>
+    </body>
+</html>

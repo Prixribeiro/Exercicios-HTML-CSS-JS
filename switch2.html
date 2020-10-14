@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--Fazer um programa para termos a opção de uma calculadora. Se o usuário escolher o + o programa soma dois números e exibe. SE o usuário escolher o - o programa subtrai dois números e exibe. Se o usuário escolher * o programa multiplica dois números e exibe. Se o usuário escolher / o programa divide dois números e exibe.-->
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercicios com Switch</title>
+
+        <header>Criar uma calculadora</header>
+    </head>
+    <body>
+        <script>
+            let num1 = +prompt ("Digite um número: ");
+            let num2 = +prompt ("Digite outro numero")
+            let calc = prompt ("Qual operação você deseja fazer (+, -, * , /)?");
+
+            
+            switch (calc) {
+                case "+":
+                console.log (num1+num2);
+                break
+                
+                case "-":
+                console.log (num1-num2);
+                break
+                
+                case "*":
+                console.log (num1*num2);
+                break
+                
+                case "/":
+                console.log (num1/num2);
+                break
+            }
+        </script>
+    </body>
+    </html>
+

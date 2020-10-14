@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<!--//Fazer um programa para criar um array com 5 informações e através de uma estrutura de repetição, remover apenas os elementos de índice ímpar//-->
+
+<!-- <script>
+let tortas = ["Banoffe ", "Merengoffe ", "Uvoffe ", "Pinoffe ", 'crianças ', "natalina "]
+let controle=0
+
+for (i=0;i<5;i++){
+	if ((i-controle)%2 != 0);
+	tortas.splice (i,1);
+  controle++
+  
+	document.write(tortas[i]);
+  
+  }
+  
+</script>
+
+let numero = ["0", "1", "2", "3", "4"];
+let controle = 0;
+
+for (let i = 0; i < 5; i++){
+    if((i-controle)%2 != 0){
+        numero.splice(i, 1);
+        controle++
+    }
+}
+
+console.log(numero);-->
+
+<!--fazer um programa para criar de forma manual um array com 9 elementos onde o último índice será de valor oito. É preciso saber a quantidade total de elementos do array para que o programa possa excluir o elemento do meio.-->
+<!--
+<script>
+
+let frutas = ["pera", "uva", "maça", "banana", "abacate","laranja","morango", "melancia", "jabuticaba"]
+let val = frutas.length;
+let tot;
+  tot = (parseInt(val / 2));
+  frutas.splice(tot, 1);
+  console.log(frutas);
+
+</script>
+__>
+
+<!--Criar um arquivo .html;
+Criar uma função na tag <head> para somar dois números;
+Exibir o resultado do somatório com o comando alert;
+Criar na tag <body> a entrada de dados de dois valores utilizando o prompt;
+Criar um título com a tag <h2>;
+Criar um botação para chamar a função;-->
+
+    <head>
+        <script>
+      
+          function soma (num1, num2)
+          {
+            return alert ("A soma foi " + tot)
+          }
+        
+          </script>
+      </head>
+      
+      <body>
+        <h2> Trabalhando com Function</h2>
+      
+      <script>
+          let num1 = +prompt ("Digite um número: ");
+          let num2 = +prompt ("Digite outro número: ");
+        let tot;
+          tot = num1+num2;
+      
+      </script>
+      
+        <button onclick = "soma()"> Clique aqui para realizar a soma! </button>
+      
+      
+      </body>
+    
+    <!--** USANDO O GET ELEMENT BY ID **
+    <html>
+        <body>
+            <p style = "color: aqua" id="p1">Ola pessoal!</p>
+        <p style = "color: green" id="p2">Seja bem-vindo!</p>
+            
+        <Button onclick = "trocacor()"> Clique aqui </Button>
+            
+        <script>
+                function trocacor()
+                {
+                   document.getElementById("p1").style.color = "red"; //co								loca o texto abaixo na cor vermelha 
+                   document.getElementById("p1").innerHTML = "texto novo";
+                   
+                   document.getElementById("p2").style.color = "blue"; //co								loca o texto abaixo na cor vermelha 
+                   document.getElementById("p2").innerHTML = "Acertando na 								mosca";
+                }
+             </script>
+        </body>
+    </html> 
+    -----------------------------------------------------------
+    
+    USANDO GET ELEMENT BY CLASS NAME
+    <!DOCTYPE html>
+    <html>
+    <body>
+        <div class="primeiro teste">Primeiro elemento da classe="primeiro teste".</div>
+        
+        <div class="primeiro teste">Segundo elemento da classe="segundo teste".</div>
+        
+        <p class="paragrafo">Clique no botão para o teste do primeiro elemento da classe="primeiro teste“ (índice 0)</p>
+        
+        <button onclick="myFunction()">Clique aqui!</button>
+        
+        <script>
+            function myFunction() {
+            var y = document.getElementsByClassName("primeiro teste");
+            y[0].innerHTML = "Alterou a primeira frase";
+            
+            var x = document.getElementsByClassName("paragrafo");
+            x[0].innerHTML = "Alterou o paragrafo";
+            }
+        </script>
+    </body>
+    </html>
+    
+    -->
+</html>

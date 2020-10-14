@@ -1,0 +1,77 @@
+<!DOCTIPE html>
+<html lang="pt-br">
+    <!--Criar um código HTML com o nome formulario3.html
+Colocar o título na página Formulario 3;
+Na tag <body> colocar em negrito na cor vermelha um título para as demandas abaixo;
+Na tag <body> colocar um parágrafo com informação para preenchimento do formulário;
+Na tag <body> colocar um título em negrito com o nome Formulário de Escolha;
+Na tag <body> colocar uma tabela com informações dos veículos(Tipo e Valor). A tabela deve ter as linhas com as informações do carro, da moto, do barco e da bicicleta. A tabela precisa ter um título;
+Na tag <form> colocar as entradas de dados abaixo (um em cada linha):
+Campo nome;
+Campo idade;
+Campo Data de Nascimento;
+Campo Interesse:
+Carro;		Colocar como default.
+Moto;
+Barco
+Bicicleta.-->
+
+<head>
+    <title> Formularios 3 - Checkbox</title>
+    <meta charset="UTF-8">
+
+    <body>
+        <h1><b><font color="red">Auto-Escola</font></b></h1>
+  
+
+        <p>Seja bem vindo a auto-escola da Prix. Por favor, verifique qual seu interesse e entre em contato através do formulário abaixo.</p>
+       <br>
+
+        <h2><b><font color="blue">Formulário de escolha</font></b></h2><br>
+
+        <table border="2">
+            <caption>Valores e Modelos disponíveis</caption>
+            <tr> 
+                <th>&nbsp;</th>
+                <th>Carro</th>
+                <th>Moto</th>
+                <th>Barco</th>
+                <th>Bicicleta</th>
+
+            </tr>
+            <tr>
+                <th>Valores</th>
+                <td>R$1530,00</td>
+                <td>R$ 1250,00</td>
+                <td>R$3000,00</td>
+                <td> R$150,00</td>
+            </tr>
+            <tr>
+                <th>Modelos</th>
+                <td>Picanto 1.0</td>
+                <td>Dafra 300</td>
+                <td>Modelo Neymar</td>
+                <td>Mountain- Bike</td>
+            </tr>
+        </table>
+        <br><br>
+
+        <form>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome"><br><br>
+            <label for="idade">Idade:</label><br>
+            <input type="number" id="idade" name="idade"><br><br>
+            <label for="nasc">Data de Nascimento:</label><br>
+            <input type="date" id="nasc" name="nasc"><br><br>
+            Campo de Interesse: <br>
+            <input type="checkbox" id="veiculo1" name="veiculo1" value="Carro" checked> Carro <br> 
+            <input type="checkbox" id= "veiculo2" name="veiculo2" value="Moto"> Moto <br> 
+            <input type="checkbox" id= "veiculo3" name="veiculo3" value="Barco"> Barco <br>
+            <input type="checkbox" id= "veiculo4" name="veiculo4" value="Bicicleta"> Bicicleta <br>
+        </form>
+
+
+  
+    </body>
+
+</html>
